@@ -43,12 +43,33 @@
             font-family: 'Inconsolata', monospace;
         }
 
+        a {
+            color: #cccccc;
+        }
+
+        .button {
+            padding: 12px;
+            text-decoration: none;
+            margin: 6px;
+            background-color: #7700a7;
+            border: 2px solid #7700a7;
+            transition-duration: 0.24s;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0);
+        }
+
         #navbar {
+            position: fixed;
+            top: 0;
             background-color: #303030;
             width: 100%;
+            overflow: hidden;
         }
 
         #bar-title {
+            float: left;
             text-decoration: none;
             display: block;
             color: #cccccc;
@@ -56,10 +77,16 @@
             padding: 12px;
             margin-inline-start: 12px;
         }
+
+        #navbar-contact {
+            float: right;
+            margin-inline-end: 12px;
+        }
     </style>
     <div id="main">
         <div id="navbar">
             <a id="bar-title" href="#">ALEX SIZOV</a>
+            <a class="button" id="navbar-contact" href="#contact">Contact</a>
         </div>
     </div>
     <script>
