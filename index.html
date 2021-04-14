@@ -82,11 +82,126 @@
             float: right;
             margin-inline-end: 12px;
         }
+
+        #landing {
+            background-image: linear-gradient(to bottom right, #242424, #7700a7);
+            overflow: hidden;
+            margin-top: 56px;
+            height: 70vh;
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+        }
+
+        @keyframes blinker {
+            0% {
+                opacity: 0;
+            }
+            49% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @-webkit-keyframes blinker {
+            0% {
+                opacity: 0;
+            }
+            49% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @-moz-keyframes blinker {
+            0% {
+                opacity: 0;
+            }
+            49% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes blinker {
+            0% {
+                opacity: 0;
+            }
+            49% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .landing-container {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            margin-left: 2vw;
+            margin-right: 2vw;
+        }
+
+        #landing-main-text {
+            font-size: 64px;
+            float: left;
+        }
+
+        #greeting-terminal {
+            background-color: #242424;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #landing-cursor {
+            font-size: 64px;
+            margin-left: 4px;
+            float: left;
+            animation-name: blinker;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            -webkit-animation-name: blinker;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-duration: 1s;
+        }
+
     </style>
     <div id="main">
         <div id="navbar">
             <a id="bar-title" href="#">ALEX SIZOV</a>
             <a class="button" id="navbar-contact" href="#contact">Contact</a>
+        </div>
+        <div id="landing">
+            <div class="landing-container">
+                <h1 id="landing-main-text">Statement</h1>
+                <h1 id="landing-cursor">_</h1>
+            </div>
+            <div class="landing-container">
+                <div id="greeting-terminal" />
+            </div>
         </div>
     </div>
     <script>
