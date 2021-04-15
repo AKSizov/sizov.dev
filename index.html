@@ -212,6 +212,15 @@
             white-space: pre-wrap;
         }
 
+        .terminal-selection {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .terminal-selection:hover p {
+            background-color: #333333;
+        }
+
     </style>
     <div id="main">
         <div id="navbar">
@@ -227,24 +236,26 @@
                     <div id="landing-terminal-text">
                         <p>                                </p>
                         <p>                                </p>
-                        <p>    ########    ############    |    Site: <a href="https://sizov.dev">https://sizov.dev</a></p>
-                        <p>    ########    ############    |    Web server: Nginx</p>
-                        <p>                        ####    |    Public IP: 69.30.198.250</p>
-                        <p>                        ####    |    </p>
-                        <p>    ####    ########    ####    |    Load: N/A</p>
-                        <p>    ####    ########    ####    |    OS: Ubuntu 20.04 LTS</p>
-                        <p>    ####    ########    ####    |    </p>
-                        <p>    ####    ########    ####    |    Env: Production</p>
-                        <p>    ####                        |    Loaded in: N/A ms</p>
-                        <p>    ####                        |    Tests: Passing</p>
-                        <p>    ############    ########    |    </p>
-                        <p>    ############    ########    |    Source: <a href="https://github.com/AKSizov/sizov.dev" target="_blank">AKSizov/sizov.dev</a></p>
+                        <p>    <span style="color: #8040ff;">########</span>    <span style="color: #0000ee;">############</span>    |    <span style="color: #8040ff;">Site:</span> <a href="https://sizov.dev">https://sizov.dev</a></p>
+                        <p>    <span style="color: #8040ff;">########</span>    <span style="color: #0000ee;">############</span>    |    <span style="color: #8040ff;">Web server:</span> Nginx</p>
+                        <p>                        <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">Public IP:</span> 69.30.198.250</p>
+                        <p>                        <span style="color: #0000ee;">####</span>    |    </p>
+                        <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">Load:</span> N/A</p>
+                        <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">OS:</span> Ubuntu 20.04 LTS</p>
+                        <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    </p>
+                        <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">Env:</span> Production</p>
+                        <p>    <span style="color: #8040ff;">####</span>                        |    <span style="color: #8040ff;">Loaded in:</span> N/A ms</p>
+                        <p>    <span style="color: #8040ff;">####</span>                        |    <span style="color: #8040ff;">Tests:</span> Passing</p>
+                        <p>    <span style="color: #8040ff;">############    ########</span>    |    </p>
+                        <p>    <span style="color: #8040ff;">############    ########</span>    |    <span style="color: #8040ff;">Source:</span> <a href="https://github.com/AKSizov/sizov.dev" target="_blank">AKSizov/sizov.dev</a></p>
                         <p>                                </p>
                         <p>                                 </p>
                         <p>[alex@sizov.dev /welcome]$ ./start.sh</p>
                         <p>It's great to see you! :D</p>
                         <p>How may I help you today?</p>
-                        <p>> <span id="landing-cursor">_</span></p>
+                        <a class="terminal-selection" href="#"><p>> Option A</p></a>
+                        <a class="terminal-selection" href="#"><p>> Option B</p></a>
+                        <a class="terminal-selection" href="#"><p>> Option C</p></a>
                     </div>
                 </div>
             </div>
