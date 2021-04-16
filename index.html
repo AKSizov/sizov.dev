@@ -91,6 +91,9 @@
 
         #landing {
             background-image: url(./landing-bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             overflow: hidden;
             margin-top: 56px;
             height: 70vh;
@@ -169,14 +172,6 @@
             margin-right: 2vw;
         }
 
-        @media only screen and (max-width: 125vh) {
-            #landing-terminal-container {
-                width: 0;
-                height: 0;
-                visibility: hidden;
-            }
-        }
-
         #landing-main-text {
             padding: 22px;
             background-color: rgba(24, 24, 24, 0.85);
@@ -202,6 +197,19 @@
             backdrop-filter: blur(4px);
             width: 70vh;
             height: 70vh;
+        }
+
+        @media only screen and (max-width: 125vh) {
+            #landing-terminal-container {
+                width: 0;
+                height: 0;
+                visibility: hidden;
+            }
+            #landing-terminal {
+                width: 0;
+                height: 0;
+                visibility: hidden;
+            }
         }
 
         #landing-terminal-text {
@@ -273,7 +281,7 @@
             /* site load time */
             pageLoadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
             var loadTimeColor;
-            if (pageLoadTime <= 200) loadTimeColor = "#44cc00";
+            if (pageLoadTime <= 200) loadTimeColor = "#22aa00";
             else if (pageLoadTime > 200 && pageLoadTime < 500) loadTimeColor = "#cc9900";
             else loadTimeColor = "$cc0000";
             console.log(window.location.href
