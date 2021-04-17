@@ -255,7 +255,7 @@
                         <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">OS:</span> Ubuntu 20.04 LTS</p>
                         <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    </p>
                         <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">Env:</span> Production</p>
-                        <p>    <span style="color: #8040ff;">####</span>                        |    <span style="color: #8040ff;">Loaded in:</span> N/A ms</p>
+                        <p>    <span style="color: #8040ff;">####</span>                        |    <span style="color: #8040ff;">Loaded in:</span> <span class="load-time">N/A ms</span></p>
                         <p>    <span style="color: #8040ff;">####</span>                        |    <span style="color: #8040ff;">Tests:</span> Passing</p>
                         <p>    <span style="color: #8040ff;">############    ########</span>    |    </p>
                         <p>    <span style="color: #8040ff;">############    ########</span>    |    <span style="color: #8040ff;">Source:</span> <a href="https://github.com/AKSizov/sizov.dev" target="_blank">AKSizov/sizov.dev</a></p>
@@ -281,13 +281,15 @@
             /* site load time */
             pageLoadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
             var loadTimeColor;
-            if (pageLoadTime <= 200) loadTimeColor = "#22aa00";
+            if (pageLoadTime <= 200) loadTimeColor = "#44cc00";
             else if (pageLoadTime > 200 && pageLoadTime < 500) loadTimeColor = "#cc9900";
             else loadTimeColor = "$cc0000";
             console.log(window.location.href
                 + " loaded in "
                 + pageLoadTime
                 + " ms!");
+            document.getElementsByClassName("load-time")[0].innerText = pageLoadTime + "ms";
+            document.getElementsByClassName("load-time")[0].style.color = loadTimeColor;
 
         }
     </script>
