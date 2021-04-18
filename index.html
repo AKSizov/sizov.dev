@@ -32,6 +32,7 @@
             background-color: #242424;
             padding: 0;
             margin: 0;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -40,7 +41,10 @@
         }
 
         h1 {
+            font-family: 'Inconsolata', monospace;
             color: #cccccc;
+            margin: 0;
+            padding: 0;
         }
 
         p {
@@ -64,6 +68,15 @@
             padding: 0;
         }
 
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #242424;
+            margin: 8px 0;
+            padding: 0;
+        }
+
         .button {
             padding: 12px;
             text-decoration: none;
@@ -79,8 +92,6 @@
         }
 
         #navbar {
-            position: fixed;
-            top: 0;
             background-color: #303030;
             width: 100%;
             overflow: hidden;
@@ -103,11 +114,11 @@
 
         #landing {
             background-image: url(./landing-bg.png);
+            background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
-            margin-top: 56px;
             height: 70vh;
             width: 100%;
             display: inline-flex;
@@ -199,7 +210,8 @@
             width: 100%;
             padding: 16px;
             margin: 32px;
-            background-color: rgba(24, 24, 24, 0.85);
+background-size: 33.94px 33.94px;
+            border: 4px solid #7700a7;
             text-align: center;
             font-size: 64px;
             font-family: 'Inconsolata', monospace;
@@ -291,6 +303,54 @@
             }
         }
 
+        #projects {
+            background-color: #161616;
+        }
+
+        #projects-title {
+            width: 100%;
+            text-align: center;
+            padding-top: 32px;
+            font-size: 64px;
+        }
+
+        .project-item {
+            width: 100%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-top: 48px;
+        }
+        .project-item-left {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-right: 24px;
+        }
+        .project-item-left-image {
+            width: 256px;
+            height: 256px;
+        }
+        
+        .project-item-left-text-title {
+            text-align: center;
+            width: 100%;
+            font-size: 64px;
+        }
+
+        .project-item-left-subtext {
+            font-size: 20px;
+        }
+
+        .project-item-right {
+            font-size: 20px;
+            height: 100%;
+            padding: 24px;
+            border-left: 1px solid #242424;
+        }
+
     </style>
     <div id="main">
         <div id="navbar">
@@ -300,7 +360,7 @@
         <div id="landing">
             <div class="landing-container">
                 <h1 id="landing-main-text">I get stuff done<span id="landing-cursor">_</span></h1>
-                <a href="#" class="button">projects<span class="arrow"> >></span></a>
+                <a href="#projects" class="button">projects<span class="arrow"> >></span></a>
                 <a href="https://sizov.dev/resume.pdf" target="_blank" class="button">resume.pdf<span class="arrow"> >></span></a>
             </div>
             <div class="landing-container" id="landing-terminal-container">
@@ -329,6 +389,66 @@
                         <a class="terminal-selection" href="#contact"><p>> I'd like to hire a full stack developer<span class="sel-cursor" id="landing-cursor">_</span></p></a>
                         <a class="terminal-selection" href="#contact"><p>> I'd like to contact you<span class="sel-cursor" id="landing-cursor">_</span></p></a>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <h1 id="projects-title">Projects</h1>
+            <div class="project-item">
+                <div class="project-item-left">
+                    <img class="project-item-left-image" src="loopbox.png" />
+                    <div class="project-item-left-text">
+                        <h1 class="project-item-left-text-title">Loopbox</h1>
+                        <hr/>
+                        <div class="project-item-left-subtext">
+                            <p>1.5MB | <a href="https://loopbox.io" target="_blank">https://loopbox.io</a> | <a href="https://play.google.com/store/apps/details?id=com.sizov.loopbox" target="_blank">Google Play</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item-right">
+                    <p>Loopbox is a background audio recorder that allows you to save the </p>
+                    <p>last few minutes of your microphone audio in the event of an emergency </p>
+                    <p>situation, where you might want to get the authorities involved.</p>
+                    <p>The app is designed to run in the background at all times, </p>
+                    <p>requires no user intervention, and is easy on battery.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-item-left">
+                    <img class="project-item-left-image" src="loopbox.png" />
+                    <div class="project-item-left-text">
+                        <h1 class="project-item-left-text-title">Loopbox</h1>
+                        <hr/>
+                        <div class="project-item-left-subtext">
+                            <p>1.5MB | <a href="https://loopbox.io" target="_blank">https://loopbox.io</a> | <a href="https://play.google.com/store/apps/details?id=com.sizov.loopbox" target="_blank">Google Play</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item-right">
+                    <p>Loopbox is a background audio recorder that allows you to save the </p>
+                    <p>last few minutes of your microphone audio in the event of an emergency </p>
+                    <p>situation, where you might want to get the authorities involved.</p>
+                    <p>The app is designed to run in the background at all times, </p>
+                    <p>requires no user intervention, and is easy on battery.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-item-left">
+                    <img class="project-item-left-image" src="loopbox.png" />
+                    <div class="project-item-left-text">
+                        <h1 class="project-item-left-text-title">Loopbox</h1>
+                        <hr/>
+                        <div class="project-item-left-subtext">
+                            <p>1.5MB | <a href="https://loopbox.io" target="_blank">https://loopbox.io</a> | <a href="https://play.google.com/store/apps/details?id=com.sizov.loopbox" target="_blank">Google Play</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item-right">
+                    <p>Loopbox is a background audio recorder that allows you to save the </p>
+                    <p>last few minutes of your microphone audio in the event of an emergency </p>
+                    <p>situation, where you might want to get the authorities involved.</p>
+                    <p>The app is designed to run in the background at all times, </p>
+                    <p>requires no user intervention, and is easy on battery.</p>
                 </div>
             </div>
         </div>
