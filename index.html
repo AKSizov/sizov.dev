@@ -256,11 +256,11 @@
             height: 70vh;
         }
 
-        #landing-terminal-text {
+        .landing-terminal-text {
             margin: 1vh;
         }
 
-        #landing-terminal-text p{
+        .landing-terminal-text p{
             color: #aaaaaa;
             word-wrap: break-word;
             font-size: 2vh;
@@ -274,6 +274,10 @@
 
         .terminal-selection:hover p {
             background-color: #333333;
+        }
+
+        .terminal-selection p {
+            color: #ffffff;
         }
 
         .terminal-selection .sel-cursor {
@@ -368,14 +372,14 @@
             </div>
             <div class="landing-container" id="landing-terminal-container">
                 <div id="landing-terminal">
-                    <div id="landing-terminal-text">
+                    <div class="landing-terminal-text">
                         <p>                                </p>
                         <p>                                </p>
                         <p>    <span style="color: #8040ff;">########</span>    <span style="color: #0000ee;">############</span>    |    <span style="color: #8040ff;">Site:</span> <a href="https://sizov.dev">https://sizov.dev</a></p>
                         <p>    <span style="color: #8040ff;">########</span>    <span style="color: #0000ee;">############</span>    |    <span style="color: #8040ff;">Web server:</span> nginx</p>
                         <p>                        <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">Public IP:</span> 69.30.198.250</p>
                         <p>                        <span style="color: #0000ee;">####</span>    |    </p>
-                        <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">Load:</span> N/A</p>
+                        <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">Load:</span> <span class="load-average">N/A</span></p>
                         <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">OS:</span> Ubuntu 20.04 LTS</p>
                         <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    </p>
                         <p>    <span style="color: #8040ff;">####</span>    <span style="color: #0000ee;">########</span>    <span style="color: #0000ee;">####</span>    |    <span style="color: #8040ff;">Env:</span> Production</p>
@@ -386,8 +390,8 @@
                         <p>                                </p>
                         <p>                                </p>
                         <p>[alex@sizov.dev /welcome]$ ./help.sh</p>
-                        <p>It's great to see you! :D</p>
-                        <p>How may I help you today?</p>
+                        <p style="color: #ffffff;">It's great to see you! :D</p>
+                        <p style="color: #ffffff;">How may I help you today?</p>
                         <a class="terminal-selection" href="https://sizov.dev/resume.pdf" target="_blank"><p>> I'd like to see your resume<span class="sel-cursor" id="landing-cursor">_</span></p></a>
                         <a class="terminal-selection" href="#contact"><p>> I'd like to hire a full stack developer<span class="sel-cursor" id="landing-cursor">_</span></p></a>
                         <a class="terminal-selection" href="#contact"><p>> I'd like to talk to you<span class="sel-cursor" id="landing-cursor">_</span></p></a>
@@ -445,6 +449,7 @@
     </div>
     <script>
         var pageLoadTime;
+        var serverLoad = (Math.floor(Math.random()*20)+25)/100; // not yet implemented
 
         /* when site loaded */
         window.onload = function () {
@@ -455,13 +460,25 @@
             if (pageLoadTime <= 200) loadTimeColor = "#44cc00";
             else if (pageLoadTime > 200 && pageLoadTime < 500) loadTimeColor = "#cc9900";
             else loadTimeColor = "$cc0000";
-            console.log(window.location.href
-                + " loaded in "
-                + pageLoadTime
-                + " ms!");
             document.getElementsByClassName("load-time")[0].innerText = pageLoadTime + "ms";
-            document.getElementsByClassName("load-time")[0].style.color = loadTimeColor;
+            document.getElementsByClassName("load-average")[0].innerText = serverLoad;
 
+            /* logo for fun */
+            console.info(`
+########    ############    |    Site: https://sizov.dev
+########    ############    |    Web server: nginx
+                    ####    |    Public IP: 69.30.198.250
+                    ####    |    
+####    ########    ####    |    Load: `+serverLoad+`
+####    ########    ####    |    OS: Ubuntu 20.04 LTS
+####    ########    ####    |    
+####    ########    ####    |    Env: Production
+####                        |    Loaded in: `+pageLoadTime+`ms
+####                        |    Tests: Passing
+############    ########    |    
+############    ########    |    Source: AKSizov/sizov.dev\n
+`);
+            console.log(`This console, huh?`);
         }
     </script>
 </body>
