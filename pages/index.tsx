@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import se3 from '../public/icon.svg'
+import code from '../public/code.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-zinc-900 min-h-screen text-white">
-        <header className="text-zinc-400 body-font fixed w-100 right-0 left-0 bg-[#242424cc] !backdrop-blur-md px">
+        <header className="text-zinc-400 body-font fixed w-100 right-0 left-0 bg-[#242424cc] !backdrop-blur-md px z-10">
           <div className="flex flex-wrap p-5 flex-row items-center w-100">
             <a className="flex title-font font-medium items-center text-white mb-0">
               <Image src={se3} alt="Sizov.dev logo" width={32} height={32} />
@@ -35,14 +36,17 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="flex flex-row w-100 p-24 bg-gradient-to-tr from-violet-800 to-fuchsia-600">
-          <h1 className="my-auto text-6xl basis-2/3 mx-auto text-center">Quality, production code.</h1>
+        <section
+          className="w-100 relative flex flex-row px-24 pt-24 flex-wrap z-[1]">
+          <div className='absolute left-0 right-0 top-0 bottom-0 bg-gradient-to-tr from-violet-800 to-fuchsia-600 box z-[0]'></div>
+          <h1 className="my-auto text-6xl mx-auto p-8 text-center z-[1]">Quality, <br /> production code.</h1>
           <Image
-            className="basis-1/3"
+            className="z-[1] mx-auto"
             alt="hero"
-            src="/code.png"
-            width={600}
-            height={600} />
+            src={code}
+            width='700'
+            height='501'
+            priority />
         </section>
 
         <footer className="text-zinc-400 bg-zinc-900 body-font">
