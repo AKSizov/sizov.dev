@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import se3 from '../public/icon.svg'
-import code from '../public/code.png'
-
+import headerImage from '../public/mobile_app.svg'
+import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,8 +14,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-zinc-900 min-h-screen text-white">
-        <header className="text-zinc-400 body-font fixed w-100 right-0 left-0 bg-[#242424cc] !backdrop-blur-md px z-10">
+      <main className={`bg-zinc-900 min-h-screen text-white ${inter.className}`}>
+        <header className="text-zinc-400 body-font fixed w-100 right-0 left-0 bg-[#000000cc] !backdrop-blur-md px z-10">
           <div className="flex flex-wrap p-5 flex-row items-center w-100">
             <a className="flex title-font font-medium items-center text-white mb-0">
               <Image src={se3} alt="Sizov.dev logo" width={32} height={32} />
@@ -37,15 +36,18 @@ export default function Home() {
         </header>
 
         <section
-          className="w-100 relative flex flex-row px-24 pt-24 flex-wrap z-[1]">
-          <div className='absolute left-0 right-0 top-0 bottom-0 bg-gradient-to-tr from-violet-800 to-fuchsia-600 box z-[0]'></div>
-          <h1 className="my-auto text-6xl mx-auto p-8 text-center z-[1]">Quality, <br /> production code.</h1>
+          className="w-100 relative flex flex-row p-8 pt-20 md:p-24 md:pt-48 z-[1] text-center md:text-start">
+          <div className='absolute left-0 right-0 top-0 bottom-0 bg-black z-[0]'></div>
+          <div className='flex flex-col my-auto md:mr-16'>
+            <h1 className="text-6xl py-4 z-[1] font-semibold">QUALITY CODE, DELIVERED</h1>
+            <h2 className='z-[1] text-3xl mx-1'>Worry less about nato heunsth aoesnt uhaosneu anosetuh naotehu naoteu hnsaoteh utnsao eu</h2>
+          </div>
           <Image
-            className="z-[1] mx-auto"
+            className="z-[1] hidden md:block h-[30vw] w-[30vw] my-auto"
+            // placeholder='blur'
             alt="hero"
-            src={code}
-            width='700'
-            height='501'
+            src={headerImage}
+            width='400'
             priority />
         </section>
 
