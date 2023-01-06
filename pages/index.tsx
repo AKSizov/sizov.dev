@@ -15,8 +15,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`bg-zinc-900 min-h-screen text-white ${inter.className}`}>
-        <nav className="px-4 py-2.5 rounded bg-zinc-900 fixed z-20 top-0 left-0 right-0 border-zinc-600">
+      <main className={`bg-zinc-900 min-h-screen text-white ${inter.className} dark`}>
+        <nav className="px-4 py-2.5 bg-zinc-900 fixed z-20 top-0 left-0 right-0 border-zinc-600">
           <div className="flex flex-wrap items-center justify-between">
             <a href="https://flowbite.com/" className="flex items-center">
               <Image src={se3} className="h-6 w-6 mr-3 sm:h-9 sm:w-9" alt="Sizov.dev Logo" />
@@ -49,20 +49,23 @@ export default function Home() {
         </nav>
 
 
-        <section
-          className="w-100 relative flex flex-row p-8 pt-20 md:p-24 z-[1] text-center md:text-start">
-          <div className='absolute left-0 right-0 top-0 bottom-0 bg-black z-[0]'></div>
-          <div className='flex flex-col my-auto md:mr-16'>
-            <h1 className="text-6xl py-4 z-[1] font-semibold">QUALITY CODE, DELIVERED</h1>
-            <h2 className='z-[1] text-3xl mx-1'>Worry less about nato heunsth aoesnt uhaosneu anosetuh naotehu naoteu hnsaoteh utnsao eu</h2>
+        <section className="bg-white dark:bg-gray-900 mt-14 lg:mt-18 p-8">
+          <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div className="mx-auto lg:mx-0 lg:mr-auto place-self-center lg:col-span-7 text-center lg:text-start">
+              <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Production ready products</h1>
+              <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Enter Your spec oe aoeuh oaeuth onetuh oeanut hnoaetu aoe uoate unaote uhnoaeu aoeunht aoentuhaon euhntaoe uhhuhu hu uh </p>
+              <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base bg-violet-600 font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                Use Cases
+                <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+              <a href="#" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                Contact Me
+              </a>
+            </div>
+            <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+              <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
+            </div>
           </div>
-          <Image
-            className="z-[1] hidden md:block h-[30vw] w-[30vw] my-auto"
-            // placeholder='blur'
-            alt="hero"
-            src={headerImage}
-            width='400'
-            priority />
         </section>
 
         <footer className="text-zinc-400 bg-zinc-900 body-font">
