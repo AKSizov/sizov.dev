@@ -4,6 +4,7 @@ import se3 from '../public/icon.svg'
 import headerImage from '../public/mobile_app.svg'
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
+import { Navbar } from "flowbite-react";
 
 export default function Home() {
   return (
@@ -15,28 +16,41 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`bg-zinc-900 min-h-screen text-white ${inter.className}`}>
-        <header className="text-zinc-400 body-font fixed w-100 right-0 left-0 bg-[#000000cc] !backdrop-blur-md px z-10">
-          <div className="flex flex-wrap p-5 flex-row items-center w-100">
-            <a className="flex title-font font-medium items-center text-white mb-0">
-              <Image src={se3} alt="Sizov.dev logo" width={32} height={32} />
-              <span className="ml-3 text-xl hidden sm:block">Sizov.dev</span>
+        <nav className="px-4 py-2.5 rounded bg-zinc-900 fixed z-20 top-0 left-0 right-0 border-zinc-600">
+          <div className="flex flex-wrap items-center justify-between">
+            <a href="https://flowbite.com/" className="flex items-center">
+              <Image src={se3} className="h-6 w-6 mr-3 sm:h-9 sm:w-9" alt="Sizov.dev Logo" />
+              <span className="self-center text-xl font-semibold whitespace-nowrap text-white">Sizov.dev</span>
             </a>
-            <nav className="ml-4 py-1 pl-4 sm:border-l border-zinc-700flex flex-wrap items-center text-base justify-center">
-              <a className="mr-5 hover:text-white">Home</a>
-              <a className="mr-5 hover:text-white">Products</a>
-              <a className="mr-5 hover:text-white">About</a>
-            </nav>
-            <div className='grow'></div>
-            <button className="hidden sm:inline-flex items-center bg-zinc-800 border-0 py-1 px-3 focus:outline-none hover:bg-zinc-700 rounded text-base mt-0">Github
-              <svg fill="none" stroke="currentColor" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
+            <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-zinc-400 hover:bg-zinc-700 focus:ring-zinc-600" aria-controls="navbar-default" aria-expanded="false">
+              <span className="sr-only">Open main menu</span>
+              <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
             </button>
+            <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+              <ul className="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-zinc-800 md:bg-zinc-900 border-zinc-700">
+                <li>
+                  <a href="#" className="block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 text-white" aria-current="page">Home</a>
+                </li>
+                <li>
+                  <a href="#" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-zinc-400 md:hover:text-white hover:bg-zinc-700 hover:text-white md:hover:bg-transparent">About</a>
+                </li>
+                <li>
+                  <a href="#" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-zinc-400 md:hover:text-white hover:bg-zinc-700 hover:text-white md:hover:bg-transparent">Services</a>
+                </li>
+                <li>
+                  <a href="#" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-zinc-400 md:hover:text-white hover:bg-zinc-700 hover:text-white md:hover:bg-transparent">Pricing</a>
+                </li>
+                <li>
+                  <a href="#" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-zinc-400 md:hover:text-white hover:bg-zinc-700 hover:text-white md:hover:bg-transparent">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </header>
+        </nav>
+
 
         <section
-          className="w-100 relative flex flex-row p-8 pt-20 md:p-24 md:pt-48 z-[1] text-center md:text-start">
+          className="w-100 relative flex flex-row p-8 pt-20 md:p-24 z-[1] text-center md:text-start">
           <div className='absolute left-0 right-0 top-0 bottom-0 bg-black z-[0]'></div>
           <div className='flex flex-col my-auto md:mr-16'>
             <h1 className="text-6xl py-4 z-[1] font-semibold">QUALITY CODE, DELIVERED</h1>
@@ -160,6 +174,7 @@ export default function Home() {
             </div>
           </div>
         </footer>
+        <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
       </main>
     </>
   )
