@@ -4,7 +4,7 @@ import se3 from '../public/icon.svg'
 import headerImage from '../public/mobile_app.svg'
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-import { Navbar } from "flowbite-react";
+import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -48,7 +48,6 @@ export default function Home() {
           </div>
         </nav>
 
-
         <section className="bg-white dark:bg-gray-900 mt-14 lg:mt-18 p-8">
           <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div className="mx-auto lg:mx-0 lg:mr-auto place-self-center lg:col-span-7 text-center lg:text-start">
@@ -63,7 +62,7 @@ export default function Home() {
               </a>
             </div>
             <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-              <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
+              <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
             </div>
           </div>
         </section>
@@ -137,7 +136,7 @@ export default function Home() {
             </div>
           </div>
         </footer>
-        <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+        <Script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></Script>
       </main>
     </>
   )
