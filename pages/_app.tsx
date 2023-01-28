@@ -2,7 +2,6 @@ import '../styles/globals.css'
 import '../styles/devices.min.css'
 import Image from 'next/image'
 import se3 from '../public/icon.svg'
-import Script from 'next/script'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -21,19 +20,16 @@ export default function App({ Component, pageProps }: AppProps) {
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-neutral-800 md:bg-neutral-900 border-neutral-700">
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 text-white" aria-current="page">Home</a>
+                <a href="/" className="block py-2 pl-3 pr-4 bg-purple-700 rounded md:bg-transparent md:text-purple-700 md:p-0 text-white" aria-current="page">Home</a>
               </li>
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">About</a>
+                <a href="websites" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">Services</a>
               </li>
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">Services</a>
+                <a href="#" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">Projects</a>
               </li>
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">Pricing</a>
-              </li>
-              <li>
-                <a href="#" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">Contact</a>
+                <a href="#" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">Profile</a>
               </li>
             </ul>
           </div>
