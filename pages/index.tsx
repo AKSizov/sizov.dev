@@ -4,7 +4,6 @@ import headerimg from '../public/undraw_website_builder_re_ii6e.svg'
 import colabimg from '../public/undraw_team_collaboration_re_ow29.svg'
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -35,13 +34,15 @@ export default function Home() {
                 <a href='mailto:services@sizov.dev'>
                   <button className="inline-flex text-white bg-violet-500 border-0 py-2 px-6 focus:outline-none hover:bg-violet-600 rounded text-lg">Contact me</button>
                 </a>
-                <button className="ml-4 inline-flex text-neutral-400 bg-neutral-800 border-0 py-2 px-6 focus:outline-none hover:bg-neutral-700 hover:text-white rounded text-lg">Learn more</button>
+                <a href='#2'>
+                  <button className="ml-4 inline-flex text-neutral-400 bg-neutral-800 border-0 py-2 px-6 focus:outline-none hover:bg-neutral-700 hover:text-white rounded text-lg">Learn more</button>
+                </a>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900 body-font">
+        <section className="text-neutral-400 bg-neutral-900 body-font" id='2'>
           <div className="container px-5 py-24 mx-auto">
             <div className="text-center mb-8">
               <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Included in all of my services</h1>
@@ -103,11 +104,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <button className="flex mx-auto mt-16 text-white bg-violet-500 border-0 py-2 px-8 focus:outline-none hover:bg-violet-600 rounded text-lg">View services</button>
+            <a href='#3'>
+              <button className="flex mx-auto mt-16 text-white bg-violet-500 border-0 py-2 px-8 focus:outline-none hover:bg-violet-600 rounded text-lg">View services</button>
+            </a>
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900 body-font">
+        <section className="text-neutral-400 bg-neutral-900 body-font" id='3'>
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col">
               <div className="h-1 bg-neutral-800 rounded overflow-hidden">
@@ -137,8 +140,8 @@ export default function Home() {
                 <div className="rounded-lg h-64 overflow-hidden">
                   <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504" />
                 </div>
-                <h2 className="text-xl font-medium title-font text-white mt-5">The Catalyzer</h2>
-                <p className="text-base leading-relaxed mt-2">Swag shoindxigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+                <h2 className="text-xl font-medium title-font text-white mt-5">I will optimize your existing website</h2>
+                <p className="text-base leading-relaxed mt-2">Struggling with your lighthouse score, SEO, or user experience? I will improve your website’s performance by optimizing images, database queries, FCP, CLS, and more!</p>
                 <a className="text-violet-400 inline-flex items-center mt-3">Learn More
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -149,8 +152,8 @@ export default function Home() {
                 <div className="rounded-lg h-64 overflow-hidden">
                   <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505" />
                 </div>
-                <h2 className="text-xl font-medium title-font text-white mt-5">The 400 Blows</h2>
-                <p className="text-base leading-relaxed mt-2">Swag shoindegoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+                <h2 className="text-xl font-medium title-font text-white mt-5">I will deploy a docker app for you</h2>
+                <p className="text-base leading-relaxed mt-2">I will deploy an application such as Nextcloud, Nginx, or Wordpress in a easily-understandable way. HTTPS, SSL, and documentation included. I will make the app run in a portable...</p>
                 <a className="text-violet-400 inline-flex items-center mt-3">Learn More
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -203,7 +206,7 @@ export default function Home() {
                 <div className="flex-grow">
                   <h2 className="text-white text-lg title-font font-medium mb-3">About me</h2>
                   <p className="leading-relaxed text-base">I'm Alex Sizov, a full stack developer and system administrator who has been in the technology industry for 8+ years. I've developed...</p>
-                  <a className="mt-3 text-violet-400 inline-flex items-center">Learn More
+                  <a className="mt-3 text-violet-400 inline-flex items-center" href='/about'>Learn More
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
