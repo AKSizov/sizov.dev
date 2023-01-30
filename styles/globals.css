@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+:root {
+  background-color: #171717;
+}
+
 html,
 body {
   max-width: 100vw;
@@ -19,6 +23,166 @@ a {
   color: inherit;
 }
 
-.box {
-  clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),0 100%);
+@keyframes move {
+  100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #171717;
+  overflow: hidden;
+}
+
+.background span {
+  width: 44vmin;
+  height: 44vmin;
+  border-radius: 44vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  /* animation: move; */
+  animation-duration: 1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+  color: #000de3;
+  top: 6%;
+  left: 59%;
+  animation-duration: 434s;
+  animation-delay: -194s;
+  transform-origin: 21vw 16vh;
+  box-shadow: -88vmin 0 11.607619556915923vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #000de3;
+  top: 37%;
+  left: 41%;
+  animation-duration: 289s;
+  animation-delay: -467s;
+  transform-origin: 13vw 24vh;
+  box-shadow: 88vmin 0 11.883526954580002vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #000de3;
+  top: 32%;
+  left: 92%;
+  animation-duration: 149s;
+  animation-delay: -37s;
+  transform-origin: -3vw 17vh;
+  box-shadow: -88vmin 0 11.32926736404705vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #670da4;
+  top: 38%;
+  left: 23%;
+  animation-duration: 92s;
+  animation-delay: -273s;
+  transform-origin: -13vw 18vh;
+  box-shadow: -88vmin 0 11.3876474748039vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #670da4;
+  top: 92%;
+  left: 41%;
+  animation-duration: 411s;
+  animation-delay: -317s;
+  transform-origin: -5vw -20vh;
+  box-shadow: 88vmin 0 11.147396780020559vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #670da4;
+  top: 18%;
+  left: 4%;
+  animation-duration: 182s;
+  animation-delay: -361s;
+  transform-origin: -18vw -11vh;
+  box-shadow: -88vmin 0 11.154612214245862vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #670da4;
+  top: 4%;
+  left: 65%;
+  animation-duration: 410s;
+  animation-delay: -137s;
+  transform-origin: 18vw 19vh;
+  box-shadow: 88vmin 0 11.398946814652843vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #670da4;
+  top: 40%;
+  left: 66%;
+  animation-duration: 210s;
+  animation-delay: -66s;
+  transform-origin: 7vw 20vh;
+  box-shadow: -88vmin 0 11.966383292049656vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #670da4;
+  top: 89%;
+  left: 22%;
+  animation-duration: 79s;
+  animation-delay: -308s;
+  transform-origin: -7vw -7vh;
+  box-shadow: -88vmin 0 11.45448693128776vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #670da4;
+  top: 4%;
+  left: 89%;
+  animation-duration: 317s;
+  animation-delay: -420s;
+  transform-origin: -22vw -14vh;
+  box-shadow: -88vmin 0 11.209356300737786vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: #000de3;
+  top: 70%;
+  left: 60%;
+  animation-duration: 461s;
+  animation-delay: -54s;
+  transform-origin: -2vw -2vh;
+  box-shadow: -88vmin 0 11.120952321172416vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: #000de3;
+  top: 67%;
+  left: 64%;
+  animation-duration: 250s;
+  animation-delay: -12s;
+  transform-origin: 12vw 20vh;
+  box-shadow: -88vmin 0 11.494145566563258vmin currentColor;
+}
+.background span:nth-child(12) {
+  color: #000de3;
+  top: 3%;
+  left: 67%;
+  animation-duration: 94s;
+  animation-delay: -269s;
+  transform-origin: -7vw -22vh;
+  box-shadow: -88vmin 0 11.113744190683242vmin currentColor;
+}
+.background span:nth-child(13) {
+  color: #670da4;
+  top: 20%;
+  left: 89%;
+  animation-duration: 169s;
+  animation-delay: -177s;
+  transform-origin: -3vw -1vh;
+  box-shadow: -88vmin 0 11.775154894901577vmin currentColor;
+}
+.background span:nth-child(14) {
+  color: #670da4;
+  top: 54%;
+  left: 49%;
+  animation-duration: 201s;
+  animation-delay: -135s;
+  transform-origin: 11vw -7vh;
+  box-shadow: 88vmin 0 11.66677008758354vmin currentColor;
 }
