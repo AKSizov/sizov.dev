@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>About Alex Sizov | Sizov.dev</title>
-        <meta name="description" content="Create your next site with sizov.dev" />
+        <meta name="description" content="Start your next project with Sizov.dev" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -22,57 +22,20 @@ export default function Home() {
           <span></span><span></span><span></span>
         </div>
 
-        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 accelerated body-font">
-          <div className="container px-5 py-24 mx-auto flex flex-wrap">
-            <div className="p-4 mx-auto lg:w-1/2 md:w-full">
-              <div className="flex border-2 rounded-lg border-neutral-800 p-8 sm:flex-row flex-col">
-                <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-neutral-800 text-violet-400 flex-shrink-0">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10" viewBox="0 0 24 24">
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                </div>
-                <div className="flex-grow">
-                  <h2 className="text-white text-lg title-font font-medium mb-3">About me</h2>
-                  <p className="leading-relaxed text-base">I'm Alex Sizov, a full stack developer and system administrator who has been in the technology industry for 8+ years. I've developed ...</p>
-                  <a className="mt-3 text-violet-400 inline-flex items-center" href='/about'>Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                </div>
+        <section className="">
+          <div className='text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 py-24 px-[10vw]'>
+            <h1 className='text-6xl text-center text-white'>Hello, it's nice to meet you!</h1>
+            <p className='text-3xl text-center mt-6'>I hope we can make excellent things together.</p>
+            <div className='mt-8'>
+              <p className='text-center mx-auto'>Take my business card &#9759;</p>
+              <div className='mx-auto scale-90 w-[70vw] h-[40vw] max-h-[400px] max-w-[700px] bg-white'>
+                
               </div>
             </div>
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 accelerated body-font">
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
-              <Image className="object-cover object-center rounded" alt="hero" src={headerimg} />
-            </div>
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">User experience first
-              </h1>
-              <p className="mb-2 leading-relaxed">
-                There has always been a large gap between what a developer makes and what the users really want. This is in part because developers rarely talk directly to clients, and focus more on the technical stack rather than user experience.
-              </p>
-              <p className="mb-8 leading-relaxed">
-                I hope to change this by focusing on user experience first, and enhancing it by using modern technologies and industry-leading best practices.
-              </p>
-              <div className="flex justify-center">
-                <a href='mailto:services@sizov.dev'>
-                  <button className="inline-flex text-white bg-violet-500 border-0 py-2 px-6 focus:outline-none hover:bg-violet-600 rounded text-lg">Contact me</button>
-                </a>
-                <a href='#2'>
-                  <button className="ml-4 inline-flex text-neutral-400 bg-neutral-800 border-0 py-2 px-6 focus:outline-none hover:bg-neutral-700 hover:text-white rounded text-lg">Learn more</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 accelerated body-font" id='2'>
+        <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 body-font" id='2'>
           <div className="container px-5 py-16 mx-auto">
             <div className="text-center mb-8">
               <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Included in all of my services</h1>
@@ -140,7 +103,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 accelerated body-font" id='3'>
+        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 body-font" id='3'>
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col">
               <div className="h-1 bg-neutral-800 rounded overflow-hidden">
@@ -194,7 +157,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 accelerated body-font">
+        <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 body-font">
           <div className="container px-5 py-8 mx-auto flex flex-wrap items-center">
             <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
               <h1 className="title-font font-medium text-3xl text-white">Custom services</h1>

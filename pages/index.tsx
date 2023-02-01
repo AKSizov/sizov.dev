@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>Quality, production ready code | Sizov.dev</title>
-        <meta name="description" content="Create your next site with sizov.dev" />
+        <meta name="description" content="Start your next project with Sizov.dev" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -22,7 +22,7 @@ export default function Home() {
           <span></span><span></span><span></span>
         </div>
 
-        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 accelerated body-font">
+        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 body-font">
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
               <Image className="object-cover object-center rounded" alt="hero" src={headerimg} />
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 accelerated body-font" id='2'>
+        <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 body-font" id='2'>
           <div className="container px-5 py-16 mx-auto">
             <div className="text-center mb-8">
               <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Included in all of my services</h1>
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 accelerated body-font" id='3'>
+        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 body-font" id='3'>
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col">
               <div className="h-1 bg-neutral-800 rounded overflow-hidden">
@@ -170,7 +170,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 accelerated body-font">
+        <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 body-font">
           <div className="container px-5 py-8 mx-auto flex flex-wrap items-center">
             <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
               <h1 className="title-font font-medium text-3xl text-white">Custom services</h1>
@@ -199,7 +199,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 accelerated body-font">
+        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 body-font">
           <div className="container px-5 py-24 mx-auto flex flex-wrap">
             <div className="p-4 mx-auto lg:w-1/2 md:w-full">
               <div className="flex border-2 rounded-lg border-neutral-800 p-8 sm:flex-row flex-col">
