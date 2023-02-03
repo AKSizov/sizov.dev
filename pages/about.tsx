@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import headerimg from '../public/undraw_website_builder_re_ii6e.svg'
+import qr from '../public/q1.1-inverted-nobg.svg'
 import colabimg from '../public/undraw_team_collaboration_re_ow29.svg'
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
@@ -24,12 +24,30 @@ export default function Home() {
 
         <section className="">
           <div className='text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 py-24 px-[10vw]'>
-            <h1 className='text-6xl text-center text-white'>Hello, it's nice to meet you!</h1>
+            <h1 className='text-6xl text-center text-white font-bold'>Hello, it's nice to meet you!</h1>
             <p className='text-3xl text-center mt-6'>I hope we can make excellent things together.</p>
             <div className='mt-8'>
               <p className='text-center mx-auto'>Take my business card &#9759;</p>
-              <div className='mx-auto scale-90 w-[70vw] h-[40vw] max-h-[400px] max-w-[700px] bg-white'>
-                
+              <div className='mx-auto scale-90 w-[70vw] h-[40vw] max-h-[400px] max-w-[700px] bg-neutral-900'>
+                <div className='flex flex-row h-full w-full justify-center'>
+                  <div className='flex flex-col justify-center basis-1'>
+                    <div className='h-[1vw] max-h-[10px]'></div>
+                    <Image className='w-[22vw] max-w-[220px] h-[22vw] max-h-[220px]' src={qr} alt='qr code with logo' />
+                    <div className='h-[1vw] max-h-[10px]'></div>
+                    <a className='text-center text-lg' href='https://sizov.io/about'>https://sizov.io/about</a>
+                  </div>
+                  <div className='w-[5vw] max-w-[50px]'></div>
+                  <div className='flex flex-col justify-center basis-2'>
+                    <h1 className='text-white text-3xl font-bold whitespace-nowrap'>Alexander Sizov</h1>
+                    <h2 className='text-lg italic'>Full Stack developer</h2>
+                    <h1 className='text-white text-xl'>.</h1>
+                    <ul>
+                      <li>Web/Mobile Development</li>
+                      <li>Infrastructure & IT</li>
+                      <li>UI / UX Design</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
