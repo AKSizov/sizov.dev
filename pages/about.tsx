@@ -45,71 +45,246 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 body-font" id='2'>
-          <div className="container px-5 py-16 mx-auto">
-            <div className="text-center mb-8">
-              <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Included in all of my services</h1>
-              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">No matter what service you request, I'll make sure my quality work the following standards:</p>
+        <section className="h-[30vh] flex flex-col text-neutral-400 bg-neutral-900/50 backdrop-brightness-50" id='2'>
+          <div className='flex flex-row h-full items-center marquee'>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="icon" />
             </div>
-            <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-              <div className="p-2 sm:w-1/2 w-full">
-                <div className="bg-neutral-800/50 rounded flex p-4 h-full items-center">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-violet-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                    <path d="M22 4L12 14.01l-3-3"></path>
-                  </svg>
-                  <span className="title-font font-medium text-white">Straightforward and accessible interfaces</span>
-                </div>
-              </div>
-              <div className="p-2 sm:w-1/2 w-full">
-                <div className="bg-neutral-800/50 rounded flex p-4 h-full items-center">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-violet-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                    <path d="M22 4L12 14.01l-3-3"></path>
-                  </svg>
-                  <span className="title-font font-medium text-white">Easy deployment and scalability</span>
-                </div>
-              </div>
-              <div className="p-2 sm:w-1/2 w-full">
-                <div className="bg-neutral-800/50 rounded flex p-4 h-full items-center">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-violet-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                    <path d="M22 4L12 14.01l-3-3"></path>
-                  </svg>
-                  <span className="title-font font-medium text-white">Coherent colors, fonts and formatting</span>
-                </div>
-              </div>
-              <div className="p-2 sm:w-1/2 w-full">
-                <div className="bg-neutral-800/50 rounded flex p-4 h-full items-center">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-violet-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                    <path d="M22 4L12 14.01l-3-3"></path>
-                  </svg>
-                  <span className="title-font font-medium text-white">Wide range of supported backends</span>
-                </div>
-              </div>
-              <div className="p-2 sm:w-1/2 w-full">
-                <div className="bg-neutral-800/50 rounded flex p-4 h-full items-center">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-violet-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                    <path d="M22 4L12 14.01l-3-3"></path>
-                  </svg>
-                  <span className="title-font font-medium text-white">Good error handling / messages</span>
-                </div>
-              </div>
-              <div className="p-2 sm:w-1/2 w-full">
-                <div className="bg-neutral-800/50 rounded flex p-4 h-full items-center">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-violet-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                    <path d="M22 4L12 14.01l-3-3"></path>
-                  </svg>
-                  <span className="title-font font-medium text-white">Legacy compatibility</span>
-                </div>
-              </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="icon" />
             </div>
-            <a href='#3'>
-              <button className="flex mx-auto mt-8 text-white bg-violet-500 border-0 py-2 px-8 focus:outline-none hover:bg-violet-600 rounded text-lg">View services</button>
-            </a>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="icon" />
+            </div>
+
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="icon" />
+            </div>
+          </div>
+          <div className='flex flex-row h-full items-center marquee-rev'>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jamstack/jamstack-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh] invert' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh] invert' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh] invert' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh] invert' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="icon" />
+            </div>
+
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jamstack/jamstack-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh] invert' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh] invert' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh] invert' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh] invert' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="icon" />
+            </div>
+            <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
+              <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="icon" />
+            </div>
           </div>
         </section>
 

@@ -186,3 +186,15 @@ a {
   transform-origin: 11vw -7vh;
   box-shadow: 88vmin 0 11.66677008758354vmin currentColor;
 }
+
+.marquee { animation: marquee 20s linear infinite forwards; }
+.marquee-rev { animation: marquee 20s linear infinite reverse; }
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
