@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import qr from '../public/q1.1-inverted-nobg.svg'
+import se3 from '../public/icon.svg'
 import colabimg from '../public/undraw_team_collaboration_re_ow29.svg'
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
@@ -22,32 +23,23 @@ export default function Home() {
           <span></span><span></span><span></span>
         </div>
 
-        <section className="">
-          <div className='text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 py-24 px-[10vw]'>
-            <h1 className='text-6xl text-center text-white font-bold'>Hello, it's nice to meet you!</h1>
-            <p className='text-3xl text-center mt-6'>I hope we can make excellent things together.</p>
-            <div className='mt-8'>
-              <p className='text-center mx-auto'>Take my business card &#9759;</p>
-              <div className='mx-auto scale-90 w-[70vw] h-[40vw] max-h-[400px] max-w-[700px] bg-neutral-900'>
-                <div className='flex flex-row h-full w-full justify-center'>
-                  <div className='flex flex-col justify-center basis-1'>
-                    <div className='h-[1vw] max-h-[10px]'></div>
-                    <Image className='w-[22vw] max-w-[220px] h-[22vw] max-h-[220px]' src={qr} alt='qr code with logo' />
-                    <div className='h-[1vw] max-h-[10px]'></div>
-                    <a className='text-center text-lg' href='https://sizov.io/about'>https://sizov.io/about</a>
-                  </div>
-                  <div className='w-[5vw] max-w-[50px]'></div>
-                  <div className='flex flex-col justify-center basis-2'>
-                    <h1 className='text-white text-3xl font-bold whitespace-nowrap'>Alexander Sizov</h1>
-                    <h2 className='text-lg italic'>Full Stack developer</h2>
-                    <h1 className='text-white text-xl'>.</h1>
-                    <ul>
-                      <li>Web/Mobile Development</li>
-                      <li>Infrastructure & IT</li>
-                      <li>UI / UX Design</li>
-                    </ul>
-                  </div>
-                </div>
+        <section className="min-h-[70vh] backdrop-brightness-50 text-neutral-400 flex flex-col justify-center p-4">
+          <div className='flex flex-col lg:flex-row py-auto px-[5vw] gap-8 pt-8 items-center'>
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0">
+              <Image className="object-cover object-center" alt="hero" src={colabimg} />
+            </div>
+            <div className='lg:grow'></div>
+            <div className='flex flex-col justify-center grow items-center lg:items-start'>
+              <h1 className='text-6xl text-white font-bold text-center lg:text-left'>Hello, I'm <span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>Alex Sizov</span></h1>
+              <div className='h-0.5 w-32 bg-neutral-300 mt-4'></div>
+              <p className='text-2xl mt-4 text-center lg:text-left'>I'm a full stack developer and system administrator who has been in the industry for  over 8+ years. I've developed software for startups, open source projects, and major corporations</p>
+              <div className="flex flex-col sm:flex-row justify-center my-8 mt-6 gap-4 w-full sm:w-auto">
+                <a href='#4'>
+                  <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-lg text-center w-full sm:w-auto">View my resume -&gt;</button>
+                </a>
+                <a href='#2'>
+                  <button className="text-white border-2 rounded border-neutral-500 py-2 px-6 hover:bg-neutral-500 text-lg text-center w-full sm:w-auto">Learn more -&gt;</button>
+                </a>
               </div>
             </div>
           </div>
