@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import qr from '../public/q1.1-inverted-nobg.svg'
-import se3 from '../public/icon.svg'
+import resheader from '../public/undraw_message_sent_re_q2kl.svg'
+import soonimg from '../public/huma-kabakci-oRk4Ep65tRc-unsplash.webp'
 import colabimg from '../public/undraw_team_collaboration_re_ow29.svg'
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="h-[30vh] flex flex-col text-neutral-400 bg-neutral-900/50 backdrop-brightness-50" id='2'>
+        <section className="h-[35vh] flex flex-col text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 py-[2.5vh]" id='2'>
           <div className='flex flex-row h-full items-center marquee'>
             <div className='rounded border-2 border-neutral-700 h-[12vh] w-[12vh] flex items-center justify-center flex-shrink-0 ml-[1.5vh]'>
               <Image className='h-[8vh] w-[8vh]' height={64} width={64} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="icon" />
@@ -288,56 +288,31 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 body-font" id='3'>
-          <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-col">
-              <div className="h-1 bg-neutral-800 rounded overflow-hidden">
-                <div className="w-24 h-full bg-violet-500"></div>
+        <section className="text-neutral-400 bg-neutral-900/0 backdrop-brightness-50 body-font flex flex-col py-4 px-6" id='3'>
+          <div className='my-16 flex flex-col lg:mx-16'>
+            <h1 className='text-5xl text-white font-bold text-center my-2'>Projects</h1>
+            <p className='text-xl text-center'>Take a look at what I'm working on, and what's coming next.</p>
+          </div>
+          <div className="flex flex-wrap text-center">
+            <div className="sm:w-1/2 mb-10 px-4">
+              <div className="">
+                <img alt="content" className="max-h-80 max-w-full m-auto rounded" src={soonimg.src} />
               </div>
-              <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-                <h1 className="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Specialty services</h1>
-                <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Regardless as to if you are starting a new adventure, upgrading a current project, or just looking around, these quality services are available at low-cost to you.</p>
-              </div>
+              <h2 className="title-font text-4xl font-medium text-white mt-6 mb-3">SmartBuddy</h2>
+              <p className="leading-relaxed text-xl">The cloud stack you've always wanted but never had. Runs on whatever you have.</p>
+              <a href='#'>
+                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-lg text-center w-full sm:w-auto my-4 opacity-50" disabled>Coming soon</button>
+              </a>
             </div>
-            <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-              <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div className="rounded-lg h-64 overflow-hidden">
-                  <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503" />
-                </div>
-                <h2 className="text-xl font-medium title-font text-white mt-5">I will make a website from your sketch/drawing</h2>
-                <p className="text-base leading-relaxed mt-2">
-                  I will make a custom and responsive website from a sketch drawing. Sketching the website on a piece of paper is always the first step to create something brilliant. I will handle all the technical details and optionally set up hosting ...
-                </p>
-                <a className="text-violet-400 inline-flex items-center mt-3">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
+            <div className="sm:w-1/2 mb-10 px-4">
+              <div className="max-h-96">
+                <img alt="content" className="max-h-80 max-w-full m-auto rounded" src={soonimg.src} />
               </div>
-              <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div className="rounded-lg h-64 overflow-hidden">
-                  <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504" />
-                </div>
-                <h2 className="text-xl font-medium title-font text-white mt-5">I will optimize your existing website</h2>
-                <p className="text-base leading-relaxed mt-2">Struggling with your lighthouse score, SEO, or user experience? I will improve your website’s performance by optimizing images, database queries, FCP, CLS, and more!</p>
-                <a className="text-violet-400 inline-flex items-center mt-3">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-              <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div className="rounded-lg h-64 overflow-hidden">
-                  <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505" />
-                </div>
-                <h2 className="text-xl font-medium title-font text-white mt-5">I will deploy a docker app for you</h2>
-                <p className="text-base leading-relaxed mt-2">I will deploy an application such as Nextcloud, Nginx, or Wordpress in a easily-understandable way. HTTPS, SSL, and documentation included. I will make the app portable ...</p>
-                <a className="text-violet-400 inline-flex items-center mt-3">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
+              <h2 className="title-font text-4xl font-medium text-white mt-6 mb-3">Get a Sober</h2>
+              <p className="leading-relaxed text-xl">A local ride-sharing alternative that charges flat rate fees for college campuses.</p>
+              <a href='#'>
+                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-lg text-center w-full sm:w-auto my-4 opacity-50" disabled>Coming soon</button>
+              </a>
             </div>
           </div>
         </section>
