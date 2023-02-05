@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import resheader from '../public/undraw_message_sent_re_q2kl.svg'
-import soonimg from '../public/huma-kabakci-oRk4Ep65tRc-unsplash.webp'
-import colabimg from '../public/undraw_team_collaboration_re_ow29.svg'
+import soonimg from '../public/pop-zebra-4q3Ogm3Kt44-unsplash.webp'
+import colabimg from '../public/undraw_developer_activity_re_39tg.svg'
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
