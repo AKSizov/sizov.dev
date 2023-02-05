@@ -22,26 +22,23 @@ export default function Home() {
           <span></span><span></span><span></span>
         </div>
 
-        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 body-font">
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
-              <Image className="object-cover object-center rounded" alt="hero" src={headerimg} />
+        <section className="min-h-[70vh] backdrop-brightness-50 text-neutral-400 flex flex-col justify-center p-4">
+          <div className='flex flex-col lg:flex-row py-auto px-[5vw] gap-8 pt-8 items-center'>
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0">
+              <Image className="object-cover object-center" alt="hero" src={headerimg} />
             </div>
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">User experience first
-              </h1>
-              <p className="mb-2 leading-relaxed">
-                There has always been a large gap between what a developer makes and what the users really want. This is in part because developers rarely talk directly to clients, and focus more on the technical stack rather than user experience.
-              </p>
-              <p className="mb-8 leading-relaxed">
-                I hope to change this by focusing on user experience first, and enhancing it by using modern technologies and industry-leading best practices.
-              </p>
-              <div className="flex justify-center">
-                <a href='mailto:services@sizov.dev'>
-                  <button className="inline-flex text-white bg-violet-500 border-0 py-2 px-6 focus:outline-none hover:bg-violet-600 rounded text-lg">Contact me</button>
+            <div className='lg:grow'></div>
+            <div className='flex flex-col justify-center grow items-center lg:items-start'>
+              <h1 className='text-6xl text-white font-bold text-center lg:text-left'><span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>User</span> experience first</h1>
+              <div className='h-0.5 w-32 bg-neutral-300 mt-4'></div>
+              <p className='text-2xl mt-4 text-center lg:text-left'>In a world where development is complicated, it's often easy to forget what the end user really wants.</p>
+              <p className='text-2xl mt-4 text-center lg:text-left'>I develop what users always wanted but never had.</p>
+              <div className="flex flex-col sm:flex-row justify-center my-8 mt-6 gap-4 w-full sm:w-auto">
+                <a href='#4'>
+                  <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-lg text-center w-full sm:w-auto">Contact me -&gt;</button>
                 </a>
                 <a href='#2'>
-                  <button className="ml-4 inline-flex text-neutral-400 bg-neutral-800 border-0 py-2 px-6 focus:outline-none hover:bg-neutral-700 hover:text-white rounded text-lg">Learn more</button>
+                  <button className="text-white border-2 rounded border-neutral-500 py-2 px-6 hover:bg-neutral-500 text-lg text-center w-full sm:w-auto">Learn more -&gt;</button>
                 </a>
               </div>
             </div>
@@ -116,7 +113,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 body-font" id='3'>
+        <section className="text-neutral-400 bg-neutral-900/0 backdrop-brightness-50 body-font" id='3'>
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col">
               <div className="h-1 bg-neutral-800 rounded overflow-hidden">
@@ -184,22 +181,11 @@ export default function Home() {
             </div>
             <div className="lg:w-2/6 md:w-1/2 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
               <Image className="object-cover object-center rounded" alt="hero" src={colabimg} />
-              {/* <h2 className="text-white text-lg font-medium title-font mb-5">Sign Up</h2>
-              <div className="relative mb-4">
-                <label for="full-name" className="leading-7 text-sm text-neutral-400">Full Name</label>
-                <input type="text" id="full-name" name="full-name" className="w-full bg-neutral-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-violet-900 rounded border border-neutral-600 focus:border-violet-500 text-base outline-none text-neutral-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></input>
-              </div>
-              <div className="relative mb-4">
-                <label for="email" className="leading-7 text-sm text-neutral-400">Email</label>
-                <input type="email" id="email" name="email" className="w-full bg-neutral-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-violet-900 rounded border border-neutral-600 focus:border-violet-500 text-base outline-none text-neutral-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></input>
-              </div>
-              <button className="text-white bg-violet-500 border-0 py-2 px-8 focus:outline-none hover:bg-violet-600 rounded text-lg">Button</button>
-              <p className="text-xs mt-3">Literally you probably haven't heard of them jean shorts.</p> */}
             </div>
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/50 backdrop-brightness-50 body-font">
+        <section className="text-neutral-400 bg-neutral-900/0 backdrop-brightness-50 body-font">
           <div className="container px-5 py-24 mx-auto flex flex-wrap">
             <div className="p-4 mx-auto lg:w-1/2 md:w-full">
               <div className="flex border-2 rounded-lg border-neutral-800 p-8 sm:flex-row flex-col">
