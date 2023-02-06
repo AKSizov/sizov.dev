@@ -22,23 +22,23 @@ export default function Home() {
           <span></span><span></span><span></span>
         </div>
 
-        <section className="min-h-[70vh] backdrop-brightness-50 text-neutral-400 flex flex-col justify-center p-4">
+        <section className="min-h-[70vh] backdrop-brightness-50 text-neutral-400 flex flex-col justify-center p-4 py-8">
           <div className='flex flex-col lg:flex-row py-auto px-[5vw] gap-8 pt-8 items-center'>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0">
-              <Image className="object-cover object-center" alt="hero" src={headerimg} />
+              <Image className="object-cover object-center" alt="hero" src={colabimg} priority />
             </div>
             <div className='lg:grow'></div>
             <div className='flex flex-col justify-center grow items-center lg:items-start'>
-              <h1 className='text-6xl text-white font-bold text-center lg:text-left'><span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>User</span> experience first</h1>
+              <h1 className='text-5xl text-white font-bold text-center lg:text-left'><span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>User</span> experience first.</h1>
               <div className='h-0.5 w-32 bg-neutral-300 mt-4'></div>
-              <p className='text-2xl mt-4 text-center lg:text-left'>In a world where development is complicated, it's often easy to forget what the end user really wants.</p>
-              <p className='text-2xl mt-4 text-center lg:text-left'>I develop what users always wanted but never had.</p>
+              <p className='text-xl mt-4 text-center lg:text-left'>In a world where development is complicated, it's often easy to forget what the end user really wants.</p>
+              <p className='text-xl mt-4 text-center lg:text-left'>I develop what users always wanted but never had.</p>
               <div className="flex flex-col sm:flex-row justify-center my-8 mt-6 gap-4 w-full sm:w-auto">
-                <a href='#4'>
-                  <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-lg text-center w-full sm:w-auto">Contact me -&gt;</button>
+                <a className='w-full sm:w-auto' href='mailto:alex@sizov.dev'>
+                  <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto">Contact me -&gt;</button>
                 </a>
-                <a href='#2'>
-                  <button className="text-white border-2 rounded border-neutral-500 py-2 px-6 hover:bg-neutral-500 text-lg text-center w-full sm:w-auto">Learn more -&gt;</button>
+                <a className='w-full sm:w-auto' href='#2'>
+                  <button className="text-white border-2 rounded border-neutral-500 py-2 px-6 hover:bg-neutral-500 text-center w-full sm:w-auto">Learn more -&gt;</button>
                 </a>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function Home() {
         </section>
 
         <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 body-font" id='2'>
-          <div className="container px-5 py-16 mx-auto">
+          <div className="container px-5 py-16 mx-auto flex flex-col items-center">
             <div className="text-center mb-8">
               <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Included in all of my services</h1>
               <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">No matter what service you request, I'll make sure my quality work the following standards:</p>
@@ -94,7 +94,7 @@ export default function Home() {
                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                     <path d="M22 4L12 14.01l-3-3"></path>
                   </svg>
-                  <span className="title-font font-medium text-white">Good error handling / messages</span>
+                  <span className="title-font font-medium text-white">Excellent error handling / messages</span>
                 </div>
               </div>
               <div className="p-2 sm:w-1/2 w-full">
@@ -107,8 +107,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <a href='#3'>
-              <button className="flex mx-auto mt-8 text-white bg-violet-500 border-0 py-2 px-8 focus:outline-none hover:bg-violet-600 rounded text-lg">View services</button>
+            <a className='w-full sm:w-auto' href='#3'>
+              <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto mt-4">View services -&gt;</button>
             </a>
           </div>
         </section>
@@ -144,7 +144,7 @@ export default function Home() {
                   <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504" />
                 </div>
                 <h2 className="text-xl font-medium title-font text-white mt-5">I will optimize your existing website</h2>
-                <p className="text-base leading-relaxed mt-2">Struggling with your lighthouse score, SEO, or user experience? I will improve your website’s performance by optimizing images, database queries, FCP, CLS, and more!</p>
+                <p className="text-base leading-relaxed mt-2">Struggling with your lighthouse score, SEO, or user experience? I will improve your website's performance by optimizing images, database queries, FCP, CLS, and more!</p>
                 <a className="text-violet-400 inline-flex items-center mt-3">Learn More
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -168,18 +168,18 @@ export default function Home() {
         </section>
 
         <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 body-font">
-          <div className="container px-5 py-8 mx-auto flex flex-wrap items-center">
+          <div className="container px-5 py-8 mx-auto flex flex-wrap-reverse items-center">
             <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
               <h1 className="title-font font-medium text-3xl text-white">Custom services</h1>
               <p className="leading-relaxed my-4">
                 If the packages above don't suit your needs, no worries! <br />
                 Just shoot me an email at s‌erv‌ices‌@si‌zov.dev and we can have a chat to discuss your individual project needs.
               </p>
-              <a href='mailto:services@sizov.dev'>
-                <button className="inline-flex text-white bg-violet-500 border-0 py-2 px-6 focus:outline-none hover:bg-violet-600 rounded text-lg">Contact me at services@sizov.dev</button>
-              </a>
+              <a className='w-full sm:w-auto' href='mailto:services@sizov.dev'>
+              <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto">Contact me at s‌erv‌ices‌@si‌zov.dev -&gt;</button>
+            </a>
             </div>
-            <div className="lg:w-2/6 md:w-1/2 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+            <div className="lg:w-2/6 md:w-1/2 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full md:mt-0">
               <Image className="object-cover object-center rounded" alt="hero" src={colabimg} />
             </div>
           </div>

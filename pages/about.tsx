@@ -26,7 +26,7 @@ export default function Home() {
         <section className="min-h-[70vh] backdrop-brightness-50 text-neutral-400 flex flex-col justify-center p-4 py-8">
           <div className='flex flex-col lg:flex-row py-auto px-[5vw] gap-8 pt-8 items-center'>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0">
-              <Image className="object-cover object-center" alt="hero" src={colabimg} />
+              <Image className="object-cover object-center" alt="hero" src={colabimg} priority />
             </div>
             <div className='lg:grow'></div>
             <div className='flex flex-col justify-center grow items-center lg:items-start'>
@@ -300,22 +300,22 @@ export default function Home() {
           <div className="flex flex-wrap text-center">
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="">
-                <img alt="content" className="max-h-80 max-w-full m-auto rounded" src={soonimg.src} />
+                <Image alt="content" className="max-h-80 max-w-full m-auto rounded saturate-0 brightness-50 blur opacity-50" src={soonimg} />
               </div>
-              <h2 className="title-font text-3xl font-medium text-white mt-6 mb-3">SmartBuddy</h2>
-              <p className="leading-relaxed">The cloud stack you've always wanted but never had. Runs on whatever you have.</p>
+              <h2 className="title-font text-3xl font-medium text-white mt-6 mb-3 blur opacity-50">SmartBuddy</h2>
+              <p className="leading-relaxed blur opacity-50">The cloud stack you've always wanted but never had. Runs on whatever you have.</p>
               <a className='w-full sm:w-auto' href='#'>
-                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 opacity-50" disabled>Coming soon</button>
+                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 blur opacity-50" disabled>Coming soon</button>
               </a>
             </div>
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="max-h-96">
-                <img alt="content" className="max-h-80 max-w-full m-auto rounded" src={soonimg.src} />
+                <Image alt="content" className="max-h-80 max-w-full m-auto rounded saturate-0 brightness-50 blur opacity-50" src={soonimg} />
               </div>
-              <h2 className="title-font text-4xl font-medium text-white mt-6 mb-3">Get a Sober</h2>
-              <p className="leading-relaxed">A local ride-sharing alternative that charges flat rate fees for college campuses.</p>
+              <h2 className="title-font text-4xl font-medium text-white mt-6 mb-3 blur opacity-50">Get a Sober</h2>
+              <p className="leading-relaxed blur opacity-50">A local ride-sharing alternative that charges flat rate fees for college campuses.</p>
               <a className='w-full sm:w-auto' href='#'>
-                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 opacity-50" disabled>Coming soon</button>
+                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 blur opacity-50" disabled>Coming soon</button>
               </a>
             </div>
           </div>
