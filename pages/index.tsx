@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import headerimg from '../public/undraw_website_builder_re_ii6e.svg'
 import colabimg from '../public/undraw_team_collaboration_re_ow29.svg'
 import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })

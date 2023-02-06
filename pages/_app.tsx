@@ -3,10 +3,15 @@ import '../styles/devices.min.css'
 import Image from 'next/image'
 import se3 from '../public/icon.svg'
 import type { AppProps } from 'next/app'
+import { useEffect } from 'react'
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    import("flowbite");
+  }, []);
   return (
     <>
+      {/* <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" /> */}
       <div className="background -z-10 brightness-50">
         <span></span><span></span><span></span><span></span>
         <span></span><span></span><span></span><span></span>
@@ -15,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </div>
       <nav className="px-4 py-2 bg-brightness-50 backdrop-blur fixed z-20 top-0 left-0 right-0 border-neutral-600">
         <div className="flex flex-wrap items-center justify-between">
-          <a href="#" className="flex items-center">
+          <a href="" className="flex items-center">
             <Image src={se3} className="h-6 w-6 mr-3 sm:h-9 sm:w-9" alt="Sizov.dev Logo" />
             <span className="self-center text-xl font-semibold whitespace-nowrap text-white">Sizov.dev</span>
           </a>
@@ -75,5 +80,6 @@ export default function App({ Component, pageProps }: AppProps) {
             </span> */}
         </div>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     </>)
 }
