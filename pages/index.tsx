@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Quality, production ready code | Sizov.dev</title>
-        <meta name="description" content="Start your next project with Sizov.dev" />
+        <title>Freelance Full Stack Developer | Sizov.io</title>
+        <meta name="description" content="Start your next project with Sizov.io" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -25,16 +25,16 @@ export default function Home() {
         <section className="min-h-[70vh] backdrop-brightness-50 text-neutral-400 flex flex-col justify-center p-4 py-8">
           <div className='flex flex-col lg:flex-row py-auto px-[5vw] gap-8 pt-8 items-center'>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0">
-              <Image className="object-cover object-center" alt="hero" src={colabimg} />
+              <Image className="object-cover object-center" alt="hero" src={colabimg} priority />
             </div>
             <div className='lg:grow'></div>
             <div className='flex flex-col justify-center grow items-center lg:items-start'>
-              <h1 className='text-5xl text-white font-bold text-center lg:text-left'><span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>User</span> experience first.</h1>
+              <h1 className='text-5xl text-white font-semibold text-center lg:text-left'><span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>User</span> experience first.</h1>
               <div className='h-0.5 w-32 bg-neutral-300 mt-4'></div>
               <p className='text-xl mt-4 text-center lg:text-left'>In a world where development is complicated, it&apos;s often easy to forget what the end user really wants.</p>
               <p className='text-xl mt-4 text-center lg:text-left'>I develop what users always wanted but never had.</p>
               <div className="flex flex-col sm:flex-row justify-center my-8 mt-6 gap-4 w-full sm:w-auto">
-                <a className='w-full sm:w-auto' href='mailto:alex@sizov.dev'>
+                <a className='w-full sm:w-auto' href='mailto:alex@sizov.io'>
                   <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto">Contact me -&gt;</button>
                 </a>
                 <a className='w-full sm:w-auto' href='#2'>
@@ -127,7 +127,7 @@ export default function Home() {
             <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
               <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div className="rounded-lg h-64 overflow-hidden">
-                  <Image alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503" />
+                  <Image alt="content" className="object-cover object-center h-full w-full" width={1920} height={1080} src="https://dummyimage.com/1203x503" />
                 </div>
                 <h2 className="text-xl font-medium title-font text-white mt-5">I will make a website from your sketch/drawing</h2>
                 <p className="text-base leading-relaxed mt-2">
@@ -141,7 +141,7 @@ export default function Home() {
               </div>
               <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div className="rounded-lg h-64 overflow-hidden">
-                  <Image alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504" />
+                  <Image alt="content" className="object-cover object-center h-full w-full" width={1920} height={1080} src="https://dummyimage.com/1204x504" />
                 </div>
                 <h2 className="text-xl font-medium title-font text-white mt-5">I will optimize your existing website</h2>
                 <p className="text-base leading-relaxed mt-2">Struggling with your lighthouse score, SEO, or user experience? I will improve your website&apos;s performance by optimizing images, database queries, FCP, CLS, and more!</p>
@@ -153,7 +153,7 @@ export default function Home() {
               </div>
               <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div className="rounded-lg h-64 overflow-hidden">
-                  <Image alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505" />
+                  <Image alt="content" className="object-cover object-center h-full w-full" width={1920} height={1080} src="https://dummyimage.com/1205x505" />
                 </div>
                 <h2 className="text-xl font-medium title-font text-white mt-5">I will deploy a docker app for you</h2>
                 <p className="text-base leading-relaxed mt-2">I will deploy an application such as Nextcloud, Nginx, or Wordpress in a easily-understandable way. HTTPS, SSL, and documentation included. I will make the app portable ...</p>
@@ -175,7 +175,7 @@ export default function Home() {
                 If the packages above don&apos;t suit your needs, no worries! <br />
                 Just shoot me an email at s‌erv‌ices‌@si‌zov.dev and we can have a chat to discuss your individual project needs.
               </p>
-              <a className='w-full sm:w-auto' href='mailto:services@sizov.dev'>
+              <a className='w-full sm:w-auto' href='mailto:services@sizov.io'>
               <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto">Contact me at s‌erv‌ices‌@si‌zov.dev -&gt;</button>
             </a>
             </div>

@@ -5,13 +5,13 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://sizov.dev/</loc>
+  <loc>https://sizov.io/</loc>
   <lastmod>2022-05-30T04:11:13+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://sizov.dev/sizov_resume.pdf</loc>
+  <loc>https://sizov.io/sizov_resume.pdf</loc>
   <lastmod>2022-01-07T01:21:44+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.80</priority>

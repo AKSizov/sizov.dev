@@ -22,8 +22,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <nav className="px-4 py-2 bg-brightness-50 backdrop-blur fixed z-20 top-0 left-0 right-0 border-neutral-600">
         <div className="flex flex-wrap items-center justify-between">
           <a href="" className="flex items-center">
-            <Image src={se3} className="h-6 w-6 mr-3 sm:h-9 sm:w-9" alt="Sizov.dev Logo" />
-            <span className="self-center text-xl font-semibold whitespace-nowrap text-white">Sizov.dev</span>
+            <Image src={se3} className="h-6 w-6 mr-3 sm:h-9 sm:w-9" alt="Sizov.io Logo" />
+            <span className="self-center text-xl font-semibold whitespace-nowrap text-white">Sizov.io</span>
           </a>
           <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-neutral-400 hover:bg-neutral-700 focus:ring-neutral-600" aria-controls="navbar-default" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
@@ -49,10 +49,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <footer className="text-neutral-400 bg-neutral-900 body-font">
         <div className="container px-5 py-4 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-            <Image src={se3} alt="Sizov.dev logo" className="w-10 h-10 p-2" />
-            <span className="ml-3 text-xl">Sizov.dev</span>
+            <Image src={se3} alt="Sizov.io logo" className="w-10 h-10 p-2" />
+            <span className="ml-3 text-xl">Sizov.io</span>
           </a>
-          <p className="text-sm text-neutral-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-neutral-800 sm:py-2 sm:mt-0 mt-4">© 2023 Sizov.dev
+          <p className="text-sm text-neutral-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-neutral-800 sm:py-2 sm:mt-0 mt-4">© 2023 Sizov.io
             {/* <a href="https://twitter.com/knyttneve" className="text-neutral-500 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a> */}
           </p>
           {/* <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">

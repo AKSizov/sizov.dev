@@ -1,2 +1,2 @@
-# sizov.dev
-Website for [https://sizov.dev](https://sizov.dev)
+# sizov.io
+Website for [https://sizov.io](https://sizov.io)

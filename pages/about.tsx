@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>About Alex Sizov | Sizov.dev</title>
-        <meta name="description" content="Start your next project with Sizov.dev" />
+        <title>Alex Sizov - Freelance Full Stack Developer | Sizov.io</title>
+        <meta name="description" content="Alex Sizov (Alexander K. Sizov) full stack developer. View and download the CV, resume, and profile of Alex Sizov here." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -26,11 +26,11 @@ export default function Home() {
         <section className="min-h-[70vh] backdrop-brightness-50 text-neutral-400 flex flex-col justify-center p-4 py-8">
           <div className='flex flex-col lg:flex-row py-auto px-[5vw] gap-8 pt-8 items-center'>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0">
-              <Image className="object-cover object-center" alt="hero" src={colabimg} />
+              <Image className="object-cover object-center" alt="hero" src={colabimg} priority />
             </div>
             <div className='lg:grow'></div>
             <div className='flex flex-col justify-center grow items-center lg:items-start'>
-              <h1 className='text-5xl text-white font-bold text-center lg:text-left'>Hello, I&apos;m <span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>Alex Sizov</span></h1>
+              <h1 className='text-5xl text-white font-semibold text-center lg:text-left'>Hello, I&apos;m <span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>Alex Sizov</span></h1>
               <div className='h-0.5 w-32 bg-neutral-300 mt-4'></div>
               <p className='text-xl mt-4 text-center lg:text-left'>I&apos;m a full stack developer and system administrator who has been in the industry since 2014. I&apos;ve developed software for startups, open source projects, and major corporations</p>
               <div className="flex flex-col sm:flex-row justify-center my-8 mt-6 gap-4 w-full sm:w-auto">
