@@ -187,8 +187,8 @@ a {
   box-shadow: 88vmin 0 11.66677008758354vmin currentColor;
 }
 
-.marquee { animation: marquee 20s linear infinite forwards; }
-.marquee-rev { animation: marquee 20s linear infinite reverse; }
+.marquee { animation: marquee 40s linear infinite reverse; }
+.marquee-rev { animation: marquee 40s linear infinite forwards; }
 
 @keyframes marquee {
   0% {
