@@ -4,6 +4,7 @@ import Image from 'next/image'
 import se3 from '../public/icon.svg'
 import type { AppProps } from 'next/app'
 import { useEffect } from 'react'
+import Link from 'next/link'
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -31,13 +32,13 @@ export default function App({ Component, pageProps }: AppProps) {
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 border-neutral-700">
               <li>
-                <a href="/" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">Home</a>
+                <Link href="/" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">Home</Link>
               </li>
               <li>
-                <a href="about" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">About</a>
+                <Link href="about" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">About</Link>
               </li>
               <li>
-                <a href="about#resume" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">Resume</a>
+                <Link href="about#resume" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-neutral-400 md:hover:text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent">Resume</Link>
               </li>
             </ul>
           </div>
@@ -80,6 +81,6 @@ export default function App({ Component, pageProps }: AppProps) {
             </span> */}
         </div>
       </footer>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js" defer></script>
     </>)
 }

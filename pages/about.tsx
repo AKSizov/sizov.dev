@@ -30,9 +30,9 @@ export default function Home() {
             </div>
             <div className='lg:grow'></div>
             <div className='flex flex-col justify-center grow items-center lg:items-start'>
-              <h1 className='text-5xl text-white font-bold text-center lg:text-left'>Hello, I'm <span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>Alex Sizov</span></h1>
+              <h1 className='text-5xl text-white font-bold text-center lg:text-left'>Hello, I&apos;m <span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>Alex Sizov</span></h1>
               <div className='h-0.5 w-32 bg-neutral-300 mt-4'></div>
-              <p className='text-xl mt-4 text-center lg:text-left'>I'm a full stack developer and system administrator who has been in the industry since 2014. I've developed software for startups, open source projects, and major corporations</p>
+              <p className='text-xl mt-4 text-center lg:text-left'>I&apos;m a full stack developer and system administrator who has been in the industry since 2014. I&apos;ve developed software for startups, open source projects, and major corporations</p>
               <div className="flex flex-col sm:flex-row justify-center my-8 mt-6 gap-4 w-full sm:w-auto">
                 <a className='w-full sm:w-auto' href='#resume'>
                   <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto">View my resume -&gt;</button>
@@ -295,7 +295,7 @@ export default function Home() {
         <section className="text-neutral-400 bg-neutral-900/0 backdrop-brightness-50 body-font flex flex-col py-4 px-6" id='3'>
           <div className='my-16 flex flex-col lg:mx-16'>
             <h1 className='text-4xl text-white font-medium text-center my-2'>Projects</h1>
-            <p className='text-center'>Take a look at what I'm working on, and what's coming next.</p>
+            <p className='text-center'>Take a look at what I&apos;m working on, and what&apos;s coming next.</p>
           </div>
           <div className="flex flex-wrap text-center">
             <div className="sm:w-1/2 mb-10 px-4">
@@ -303,7 +303,7 @@ export default function Home() {
                 <Image alt="content" className="max-h-80 max-w-full m-auto rounded saturate-0 brightness-50 blur opacity-50" src={soonimg} />
               </div>
               <h2 className="title-font text-3xl font-medium text-white mt-6 mb-3 blur opacity-50">SmartBuddy</h2>
-              <p className="leading-relaxed blur opacity-50">The cloud stack you've always wanted but never had. Runs on whatever you have.</p>
+              <p className="leading-relaxed blur opacity-50">The cloud stack you&apos;ve always wanted but never had. Runs on whatever you have.</p>
               <a className='w-full sm:w-auto' href='#'>
                 <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 blur opacity-50" disabled>Coming soon</button>
               </a>
