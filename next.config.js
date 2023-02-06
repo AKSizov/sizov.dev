@@ -12,7 +12,15 @@ const nextConfig = {
         pathname: '/gh/devicons/devicon/icons/**',
       },
     ],
-  }
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/q1',
+        destination: '/api/q1',
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
