@@ -39,9 +39,9 @@ export default function Home() {
                 <a className='w-full sm:w-auto' href='#resume'>
                   <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto">View my resume -&gt;</button>
                 </a>
-                <a className='w-full sm:w-auto' href='#2'>
+                {/* <a className='w-full sm:w-auto' href='#2'>
                   <button className="text-white border-2 rounded border-neutral-500 py-2 px-6 hover:bg-neutral-500 text-center w-full sm:w-auto">Learn more -&gt;</button>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

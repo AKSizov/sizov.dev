@@ -37,9 +37,9 @@ export default function Home() {
                 <a className='w-full sm:w-auto' href='mailto:alex@sizov.io'>
                   <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto">Contact me -&gt;</button>
                 </a>
-                <a className='w-full sm:w-auto' href='#2'>
+                {/* <a className='w-full sm:w-auto' href='#2'>
                   <button className="text-white border-2 rounded border-neutral-500 py-2 px-6 hover:bg-neutral-500 text-center w-full sm:w-auto">Learn more -&gt;</button>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -133,11 +133,11 @@ export default function Home() {
                 <p className="text-base leading-relaxed mt-2">
                   I will make a custom and responsive website from a sketch drawing. Sketching the website on a piece of paper is always the first step to create something brilliant. I will handle all the technical details and optionally set up hosting ...
                 </p>
-                <a className="text-violet-400 inline-flex items-center mt-3">Learn More
+                <div className="text-violet-400 inline-flex items-center mt-3">View on Fiverr
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </div>
               </div>
               <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div className="rounded-lg h-64 overflow-hidden">
@@ -145,11 +145,11 @@ export default function Home() {
                 </div>
                 <h2 className="text-xl font-medium title-font text-white mt-5">I will optimize your existing website</h2>
                 <p className="text-base leading-relaxed mt-2">Struggling with your lighthouse score, SEO, or user experience? I will improve your website&apos;s performance by optimizing images, database queries, FCP, CLS, and more!</p>
-                <a className="text-violet-400 inline-flex items-center mt-3">Learn More
+                <div className="text-violet-400 inline-flex items-center mt-3">View on Fiverr
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </div>
               </div>
               <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
                 <div className="rounded-lg h-64 overflow-hidden">
@@ -157,11 +157,11 @@ export default function Home() {
                 </div>
                 <h2 className="text-xl font-medium title-font text-white mt-5">I will deploy a docker app for you</h2>
                 <p className="text-base leading-relaxed mt-2">I will deploy an application such as Nextcloud, Nginx, or Wordpress in a easily-understandable way. HTTPS, SSL, and documentation included. I will make the app portable ...</p>
-                <a className="text-violet-400 inline-flex items-center mt-3">Learn More
+                <div className="text-violet-400 inline-flex items-center mt-3">View on Fiverr
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function Home() {
                 <div className="flex-grow">
                   <h2 className="text-white text-lg title-font font-medium mb-3">About me</h2>
                   <p className="leading-relaxed text-base">I&apos;m Alex Sizov, a full stack developer and system administrator who has been in the technology industry for 8+ years. I&apos;ve developed ...</p>
-                  <Link className="mt-3 text-violet-400 inline-flex items-center" href='/about'>Learn More
+                  <Link className="mt-3 text-violet-400 inline-flex items-center" href='/about'>My Profile
                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
