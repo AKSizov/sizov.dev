@@ -294,7 +294,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-neutral-400 bg-neutral-900/0 backdrop-brightness-50 body-font flex flex-col py-4 px-6" id='3'>
+        {/* <section className="text-neutral-400 bg-neutral-900/0 backdrop-brightness-50 body-font flex flex-col py-4 px-6" id='3'>
           <div className='my-16 flex flex-col lg:mx-16'>
             <h1 className='text-4xl text-white font-medium text-center my-2'>Projects</h1>
             <p className='text-center'>Take a look at what I&apos;m working on, and what&apos;s coming next.</p>
@@ -321,7 +321,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 body-font" id='resume'>
           <div className="px-6 py-8 mx-auto flex flex-col lg:flex-row justify-evenly items-center">
