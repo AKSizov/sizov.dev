@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import colabimg from '../public/undraw_team_collaboration_re_ow29.svg'
+import dockerBanner from '../public/docker-banner.webp'
+import drawBanner from '../public/draw-banner.webp'
+import perfBanner from '../public/perf-banner.webp'
 import { Inter } from '@next/font/google'
 import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
@@ -126,8 +129,8 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
               <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div className="rounded-lg h-64 overflow-hidden">
-                  <Image alt="content" className="object-cover object-center h-full w-full" width={1920} height={1080} src="https://dummyimage.com/1203x503" />
+                <div className="rounded-lg brightness-90 overflow-hidden">
+                  <Image alt="content" className="object-cover object-center w-full h-auto" width={1920} height={1080} src={drawBanner} />
                 </div>
                 <h2 className="text-xl font-medium title-font text-white mt-5">I will make a website from your sketch/drawing</h2>
                 <p className="text-base leading-relaxed mt-2">
@@ -140,8 +143,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div className="rounded-lg h-64 overflow-hidden">
-                  <Image alt="content" className="object-cover object-center h-full w-full" width={1920} height={1080} src="https://dummyimage.com/1204x504" />
+                <div className="rounded-lg brightness-90 overflow-hidden">
+                  <Image alt="content" className="object-cover object-center w-full h-auto" width={1920} height={1080} src={perfBanner} />
                 </div>
                 <h2 className="text-xl font-medium title-font text-white mt-5">I will optimize your existing website</h2>
                 <p className="text-base leading-relaxed mt-2">Struggling with your lighthouse score, SEO, or user experience? I will improve your website&apos;s performance by optimizing images, database queries, FCP, CLS, and more!</p>
@@ -152,8 +155,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div className="rounded-lg h-64 overflow-hidden">
-                  <Image alt="content" className="object-cover object-center h-full w-full" width={1920} height={1080} src="https://dummyimage.com/1205x505" />
+                <div className="rounded-lg brightness-90 overflow-hidden">
+                  <Image alt="content" className="object-cover object-center w-full" width={1920} height={1080} src={dockerBanner} />
                 </div>
                 <h2 className="text-xl font-medium title-font text-white mt-5">I will deploy a docker app for you</h2>
                 <p className="text-base leading-relaxed mt-2">I will deploy an application such as Nextcloud, Nginx, or Wordpress in a easily-understandable way. HTTPS, SSL, and documentation included. I will make the app portable ...</p>
