@@ -4,6 +4,7 @@ import resheader from '../public/undraw_certificate_re_yadi.svg'
 import soonimg from '../public/pop-zebra-4q3Ogm3Kt44-unsplash.webp'
 import colabimg from '../public/undraw_developer_activity_re_39tg.svg'
 import { Inter } from '@next/font/google'
+import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -29,11 +30,12 @@ export default function Home() {
               <Image className="object-cover object-center" alt="hero" src={colabimg} priority />
             </div>
             <div className='lg:grow'></div>
-            <div className='flex flex-col justify-center grow items-center lg:items-start'>
+            <div className='flex gap-4 flex-col justify-center grow items-center lg:items-start'>
+              <Link className='text-sm hover:underline' href='/'>&lt;- Looking for the home page?</Link>
               <h1 className='text-5xl text-white font-semibold text-center lg:text-left'>Hello, I&apos;m <span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text'>Alex Sizov</span></h1>
-              <div className='h-0.5 w-32 bg-neutral-300 mt-4'></div>
-              <p className='text-xl mt-4 text-center lg:text-left'>I&apos;m a full stack developer and system administrator who has been in the industry since 2014. I&apos;ve developed software for startups, open source projects, and major corporations</p>
-              <div className="flex flex-col sm:flex-row justify-center my-8 mt-6 gap-4 w-full sm:w-auto">
+              <div className='h-0.5 w-32 bg-neutral-300'></div>
+              <p className='text-xl text-center lg:text-left'>I&apos;m a full stack developer and system administrator who has been in the industry since 2014. I&apos;ve developed software for startups, open source projects, and major corporations</p>
+              <div className="flex flex-col sm:flex-row justify-center mt-2 gap-4 w-full sm:w-auto">
                 <a className='w-full sm:w-auto' href='#resume'>
                   <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto">View my resume -&gt;</button>
                 </a>
@@ -300,12 +302,12 @@ export default function Home() {
           <div className="flex flex-wrap text-center">
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="">
-                <Image alt="content" className="max-h-80 max-w-full m-auto rounded saturate-0 brightness-50 blur opacity-50" src={soonimg} />
+                <Image alt="content" className="max-h-80 max-w-full m-auto rounded saturate-0 brightness-50 opacity-50" src={soonimg} />
               </div>
-              <h2 className="title-font text-3xl font-medium text-white mt-6 mb-3 blur opacity-50">SmartBuddy</h2>
-              <p className="leading-relaxed blur opacity-50">The cloud stack you&apos;ve always wanted but never had. Runs on whatever you have.</p>
+              <h2 className="title-font text-3xl font-medium text-white mt-6 mb-3 opacity-50">SmartBuddy</h2>
+              <p className="leading-relaxed opacity-50">The cloud stack you&apos;ve always wanted but never had. Runs on whatever you have.</p>
               <a className='w-full sm:w-auto' href='#'>
-                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 blur opacity-50" disabled>Coming soon</button>
+                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 opacity-50" disabled>Coming soon</button>
               </a>
             </div>
             <div className="sm:w-1/2 mb-10 px-4">
@@ -313,7 +315,7 @@ export default function Home() {
                 <Image alt="content" className="max-h-80 max-w-full m-auto rounded saturate-0 brightness-50 blur opacity-50" src={soonimg} />
               </div>
               <h2 className="title-font text-4xl font-medium text-white mt-6 mb-3 blur opacity-50">Get a Sober</h2>
-              <p className="leading-relaxed blur opacity-50">A local ride-sharing alternative that charges flat rate fees for college campuses.</p>
+              <p className="leading-relaxed opacity-50 blur">A local ride-sharing alternative that charges flat rate fees for college campuses.</p>
               <a className='w-full sm:w-auto' href='#'>
                 <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 blur opacity-50" disabled>Coming soon</button>
               </a>
