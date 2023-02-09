@@ -176,10 +176,10 @@ export default function Home() {
               <h1 className="title-font font-medium text-3xl text-white">Custom services</h1>
               <p className="leading-relaxed my-4">
                 If the packages above don&apos;t suit your needs, no worries! <br />
-                Just shoot me an email at s‌erv‌ices‌@si‌zov.dev and we can have a chat to discuss your individual project needs.
+                Just shoot me an email at s‌erv‌ices‌@si‌zov.io and we can have a chat to discuss your individual project needs.
               </p>
               <a className='w-full sm:w-auto' href='mailto:services@sizov.io'>
-              <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto">Contact me at s‌erv‌ices‌@si‌zov.dev -&gt;</button>
+              <button className="text-white border-2 rounded border-violet-600 py-2 px-6 hover:bg-violet-600 text-center w-full sm:w-auto">Contact me at s‌erv‌ices‌@si‌zov.io -&gt;</button>
             </a>
             </div>
             <div className="lg:w-2/6 md:w-1/2 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full md:mt-0">
