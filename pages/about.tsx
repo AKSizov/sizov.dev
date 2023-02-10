@@ -3,6 +3,8 @@ import Image from 'next/image'
 import resheader from '../public/undraw_certificate_re_yadi.svg'
 import soonimg from '../public/pop-zebra-4q3Ogm3Kt44-unsplash.webp'
 import colabimg from '../public/undraw_developer_activity_re_39tg.svg'
+import loopboximg from '../public/loopbox-banner.webp'
+
 import { Inter } from '@next/font/google'
 import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
@@ -294,12 +296,25 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section className="text-neutral-400 bg-neutral-900/0 backdrop-brightness-50 body-font flex flex-col py-4 px-6" id='3'>
+        <section className="text-neutral-400 bg-neutral-900/0 backdrop-brightness-50 body-font flex flex-col py-4 px-6" id='3'>
           <div className='my-16 flex flex-col lg:mx-16'>
             <h1 className='text-4xl text-white font-medium text-center my-2'>Projects</h1>
             <p className='text-center'>Take a look at what I&apos;m working on, and what&apos;s coming next.</p>
           </div>
           <div className="flex flex-wrap text-center">
+            <div className="sm:w-1/2 mb-10 px-4">
+              <div className="">
+                <Image alt="content" className="max-h-80 max-w-full m-auto rounded object-cover brightness-90 contrast-125" src={loopboximg} />
+              </div>
+              <h2 className="title-font text-3xl font-medium text-white mt-6 mb-3">Loopbox</h2>
+              <p className="leading-relaxed opacity-50">Protect your safety and defend yourself from unexpected emergency situations by using Loopbox, a looping audio recorder. Loopbox functions like a dashcam or airplane blackbox, sitting quietly in the background until you need it.</p>
+              <a className='w-full sm:w-auto' href='https://loopbox.io' target="_blank">
+                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 inline-flex items-center">Go to loopbox.io
+                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg></button>
+              </a>
+            </div>
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="">
                 <Image alt="content" className="max-h-80 max-w-full m-auto rounded saturate-0 brightness-50 opacity-50" src={soonimg} />
@@ -310,8 +325,8 @@ export default function Home() {
                 <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 opacity-50" disabled>Coming soon</button>
               </a>
             </div>
-            <div className="sm:w-1/2 mb-10 px-4">
-              <div className="max-h-96">
+            {/* <div className="sm:w-1/2 mb-10 px-4">
+              <div className="max-h-96 overflow-clip rounded">
                 <Image alt="content" className="max-h-80 max-w-full m-auto rounded saturate-0 brightness-50 blur opacity-50" src={soonimg} />
               </div>
               <h2 className="title-font text-4xl font-medium text-white mt-6 mb-3 blur opacity-50">Get a Sober</h2>
@@ -319,9 +334,9 @@ export default function Home() {
               <a className='w-full sm:w-auto' href='#'>
                 <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 blur opacity-50" disabled>Coming soon</button>
               </a>
-            </div>
+            </div> */}
           </div>
-        </section> */}
+        </section>
 
         <section className="text-neutral-400 bg-neutral-900/90 backdrop-brightness-50 body-font" id='resume'>
           <div className="px-6 py-8 mx-auto flex flex-col lg:flex-row justify-evenly items-center">
