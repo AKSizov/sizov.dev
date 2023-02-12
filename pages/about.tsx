@@ -309,7 +309,7 @@ export default function Home() {
               <h2 className="title-font text-3xl font-medium text-white mt-6 mb-3">Loopbox</h2>
               <p className="leading-relaxed opacity-50">Protect your safety and defend yourself from unexpected emergency situations by using Loopbox, a looping audio recorder. Loopbox functions like a dashcam or airplane blackbox, sitting quietly in the background until you need it.</p>
               <a className='w-full sm:w-auto' href='https://loopbox.io' target="_blank" rel="noopener">
-                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 inline-flex items-center">Go to loopbox.io
+                <button className="text-white border-2 rounded border-violet-600 py-2 px-6 text-center w-full sm:w-auto my-4 inline-flex items-center justify-center">Go to loopbox.io
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg></button>
