@@ -160,11 +160,11 @@ export default function Home() {
                 </div>
                 <h2 className="text-xl font-medium title-font text-white mt-5">I will deploy a docker app for you</h2>
                 <p className="text-base leading-relaxed mt-2">I will deploy an application such as Nextcloud, Nginx, or Wordpress in a easily-understandable way. HTTPS, SSL, and documentation included. I will make the app portable ...</p>
-                <div className="text-violet-400 inline-flex items-center mt-3">View on Fiverr
+                <Link href='https://www.fiverr.com/share/9Y78WD' className="text-violet-400 inline-flex items-center mt-3">View on Fiverr
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
